@@ -43,3 +43,5 @@ This approach ensures high accuracy, prevents proxy attendance, and improves eff
 1. Clone the repository  
 ```bash
 git clone https://github.com/shivam404x/NEXOR.git
+
+##Last updated: 21 Feb 2026
