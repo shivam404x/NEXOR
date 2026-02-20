@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dynamic Login Page with OTP</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="title">Login Portal</div>
+
+        <!-- ROLE SELECT -->
+        <div id="loginSection">
+
+            <div class="role-select">
+                <button class="role-btn active" onclick="selectRole('Student',this)">Student</button>
+                <button class="role-btn" onclick="selectRole('Faculty',this)">Faculty</button>
+                <button class="role-btn" onclick="selectRole('Admin',this)">Admin</button>
+            </div>
+
+            <div class="role-badge" id="roleDisplay">Logging in as: Student</div>
+
+            <form onsubmit="return loginUser()">
+                <div class="input-group">
+                    <label>Username / Email</label>
+                    <input type="text" required>
+                </div>
+
+                <div class="input-group">
+                    <label>Password</label>
+                    <input type="password" required>
+                </div>
+
+                <button class="login-btn">Login</button>
+            </form>
+
+            <div class="extra">
+                Forgot Password? <a onclick="showForgot()">Reset via OTP</a>
+            </div>
+
+        </div>
+
+        <!-- FORGOT PASSWORD -->
+        <div id="forgotSection" class="hidden">
+
+            <div class="input-group">
+                <label>Enter Registered Email</label>
+                <input type="email" id="resetEmail">
+            </div>
+
+            <button class="login-btn" onclick="sendOTP()">Send OTP</button>
+
+            <div class="extra">
+                <a onclick="backToLogin()">Back to Login</a>
+            </div>
+
+        </div>
+
+        <!-- OTP VERIFY -->
+        <div id="otpSection" class="hidden">
+
+            <div class="role-badge">Enter OTP</div>
+
+            <div class="otp-box">
+                <input maxlength="1">
+                <input maxlength="1">
+                <input maxlength="1">
+                <input maxlength="1">
+            </div>
+
+            <button class="login-btn" onclick="verifyOTP()">Verify OTP</button>
+
+        </div>
+
+        <!-- RESET PASSWORD -->
+        <div id="resetSection" class="hidden">
+
+            <div class="input-group">
+                <label>New Password</label>
+                <input type="password" id="newPass">
+            </div>
+
+            <div class="input-group">
+                <label>Confirm Password</label>
+                <input type="password" id="confirmPass">
+            </div>
+
+            <button class="login-btn" onclick="resetPassword()">Reset Password</button>
+
+        </div>
+
+    </div>
+
+    <script src="login.js"></script>
+
+</body>
+
+</html>

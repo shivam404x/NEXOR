@@ -1,0 +1,62 @@
+*{margin:0;padding:0;box-sizing:border-box;font-family:Arial}
+body{background:#f4f6fb}
+
+/* NAVBAR */
+.navbar{
+  background:linear-gradient(135deg,#ff7a18,#af002d);
+  color:white;padding:15px 25px;
+  display:flex;justify-content:space-between;align-items:center
+}
+
+/* LAYOUT */
+.container{display:flex}
+
+.sidebar{
+  width:230px;height:100vh;background:#2f3542;
+  color:white;padding-top:20px
+}
+.sidebar a{display:block;padding:12px 20px;color:white;text-decoration:none}
+.sidebar a:hover{background:#ff7a18}
+
+.content{flex:1;padding:25px}
+
+.card{
+  background:white;padding:20px;border-radius:12px;
+  box-shadow:0 5px 15px rgba(0,0,0,.1);
+  margin-bottom:20px
+}
+
+.class-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:20px
+}
+
+.class-card{
+  background:linear-gradient(135deg,#ff7a18,#af002d);
+  color:white;padding:18px;border-radius:14px;
+  position:relative
+}
+
+.badge{
+  position:absolute;top:12px;right:12px;
+  background:white;color:#af002d;
+  padding:4px 8px;border-radius:6px;font-size:12px;font-weight:bold
+}
+
+.btn{
+  margin-top:10px;padding:8px 12px;border:none;
+  border-radius:8px;background:white;color:#af002d;
+  cursor:pointer;font-weight:bold
+}
+
+button{
+  background:white;
+  color:#11998e;
+  border:none;
+  padding:8px 14px;
+  border-radius:8px;
+  cursor:pointer;
+  font-weight:bold;
+}
+

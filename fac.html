@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Faculty Smart Auto Class Dashboard</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="fac.css">
+</head>
+
+<body>
+
+<div class="navbar">
+  <h2>Faculty Auto Class System</h2>
+  <span>Welcome, Prof. Sharma</span>
+  <button class="logout-btn" onclick="logout()">Logout</button>
+</div>
+
+<div class="container">
+
+<div class="sidebar">
+  <a href="#">🏠 Dashboard</a>
+  <a href="#">📚 My Classes</a>
+  <a href="#">📊 Reports</a>
+</div>
+
+<div class="content">
+
+<div class="card">
+  <h3>Today Auto Detected Classes</h3>
+  <p>System auto detects periods. Only ONE class can be active at a time.</p>
+</div>
+
+<div class="card">
+  <div id="classGrid" class="class-grid"></div>
+</div>
+
+</div>
+</div>
+<script src="fac.js"></script>
+</body>
+</html>

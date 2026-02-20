@@ -1,0 +1,137 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+  background:#eef1f7;
+}
+
+/* ===== NAVBAR ===== */
+.navbar{
+  background:linear-gradient(135deg,#11998e,#38ef7d);
+  color:white;
+  padding:15px 25px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  box-shadow:0 5px 10px rgba(0,0,0,.2);
+}
+
+.nav-right{
+  display:flex;
+  gap:15px;
+  align-items:center;
+}
+
+.logout-btn{
+  background:white;
+  color:#11998e;
+  border:none;
+  padding:8px 14px;
+  border-radius:8px;
+  cursor:pointer;
+  font-weight:bold;
+}
+
+/* ===== LAYOUT ===== */
+.container{
+  display:flex;
+}
+
+/* ===== SIDEBAR ===== */
+.sidebar{
+  width:240px;
+  height:100vh;
+  background:#2f3542;
+  color:white;
+  padding-top:20px;
+}
+
+.sidebar a{
+  display:block;
+  padding:12px 20px;
+  color:white;
+  text-decoration:none;
+  transition:.3s;
+}
+
+.sidebar a:hover{
+  background:#11998e;
+}
+
+/* ===== CONTENT ===== */
+.content{
+  flex:1;
+  padding:25px;
+}
+
+/* ===== CARDS ===== */
+.card{
+  background:white;
+  padding:20px;
+  border-radius:12px;
+  box-shadow:0 5px 15px rgba(0,0,0,.1);
+  margin-bottom:20px;
+  animation:fadeIn .6s ease;
+}
+
+@keyframes fadeIn{
+  from{opacity:0;transform:translateY(15px)}
+  to{opacity:1;transform:translateY(0)}
+}
+
+/* ===== STATS ===== */
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+  gap:20px;
+}
+
+.stat{
+  background:linear-gradient(135deg,#11998e,#38ef7d);
+  color:white;
+  padding:20px;
+  border-radius:12px;
+  text-align:center;
+}
+
+.stat h2{
+  font-size:28px;
+}
+
+/* ===== TABLE ===== */
+.table{
+  width:100%;
+  border-collapse:collapse;
+  margin-top:10px;
+}
+
+.table th{
+  background:#11998e;
+  color:white;
+  padding:10px;
+}
+
+.table td{
+  padding:10px;
+  border-bottom:1px solid #ddd;
+  text-align:center;
+}
+
+/* ===== BUTTONS ===== */
+.btn{
+  padding:8px 12px;
+  border:none;
+  border-radius:8px;
+  background:#11998e;
+  color:white;
+  cursor:pointer;
+}
+
+.btn:hover{
+  background:#0e8076;
+}
+

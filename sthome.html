@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Student Dashboard</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="sthome.css">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<div class="navbar">
+  <h2>Student Dashboard</h2>
+  <div>
+    Welcome, Rahul Kumar
+    <button class="logout-btn" onclick="logout()">Logout</button>
+  </div>
+</div>
+
+<div class="container">
+
+<!-- SIDEBAR -->
+<div class="sidebar">
+  <a href="#">🏠 Dashboard</a>
+  <a href="#">📷 Mark Attendance</a>
+  <a href="#">📊 My Reports</a>
+</div>
+
+<!-- CONTENT -->
+<div class="content">
+
+<!-- ACTIVE CLASS -->
+<div class="class-card">
+  <h3>Current Active Class</h3>
+
+  <p><b>Course:</b> B‑Tech CSE</p>
+  <p><b>Section:</b> C</p>
+  <p><b>Subject:</b> DBMS</p>
+  <p><b>Period:</b> 1st (9:00‑10:00)</p>
+
+  <button class="btn" onclick="faceVerify()">📷 Face Verify</button>
+  <button class="btn" onclick="locationVerify()">📍 Location</button>
+  <button class="btn" onclick="markAttendance()">✅ Mark Attendance</button>
+
+  <p class="status" id="attStatus">Status: Not Marked</p>
+</div>
+
+<!-- COLORFUL CIRCLE REPORT -->
+<div class="card">
+  <h3>📊 Attendance Performance</h3>
+
+  <div class="circle-grid">
+
+    <div class="circle-card">
+      <div class="circle high">90%</div>
+      <p>DBMS</p>
+    </div>
+
+    <div class="circle-card">
+      <div class="circle medium">75%</div>
+      <p>Operating System</p>
+    </div>
+
+    <div class="circle-card">
+      <div class="circle high">95%</div>
+      <p>Computer Networks</p>
+    </div>
+
+    <div class="circle-card">
+      <div class="circle low">50%</div>
+      <p>AI</p>
+    </div>
+
+  </div>
+</div>
+
+<!-- DAY WISE -->
+<div class="card">
+  <h3>📅 Day Wise Attendance</h3>
+
+  <table class="table">
+    <tr>
+      <th>Date</th>
+      <th>Subject</th>
+      <th>Status</th>
+    </tr>
+
+    <tr>
+      <td>10 Feb</td>
+      <td>DBMS</td>
+      <td style="color:green">Present</td>
+    </tr>
+
+    <tr>
+      <td>11 Feb</td>
+      <td>OS</td>
+      <td style="color:red">Absent</td>
+    </tr>
+
+  </table>
+</div>
+
+<!-- OVERALL -->
+<div class="card">
+  <h3>Overall Summary</h3>
+  <p><b>Total Classes:</b> 60</p>
+  <p><b>Present:</b> 54</p>
+  <p><b>Absent:</b> 6</p>
+  <p><b>Overall %:</b> 90%</p>
+</div>
+
+</div>
+</div>
+
+<script src="sthome.js">
+</script>
+
+</body>
+</html>

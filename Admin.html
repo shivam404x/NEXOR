@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Admin Dashboard</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="Admin.css">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<div class="navbar">
+  <h2>Admin Dashboard</h2>
+  <div class="nav-right">
+    <span>Welcome, Admin</span>
+    <button class="logout-btn" onclick="logout()">Logout</button>
+  </div>
+</div>
+
+<div class="container">
+
+  <!-- SIDEBAR -->
+  <div class="sidebar">
+    <a href="#">🏠 Dashboard</a>
+    <a href="#">👨‍🎓 Manage Students</a>
+    <a href="#">👩‍🏫 Manage Faculty</a>
+    <a href="#">📚 Manage Subjects</a>
+    <a href="#">📊 Attendance Reports</a>
+    <a href="#">⚙️ System Settings</a>
+  </div>
+
+  <!-- CONTENT -->
+  <div class="content">
+
+    <!-- STATS -->
+    <div class="grid">
+
+      <div class="stat">
+        <h2>520</h2>
+        <p>Total Students</p>
+      </div>
+
+      <div class="stat">
+        <h2>35</h2>
+        <p>Total Faculty</p>
+      </div>
+
+      <div class="stat">
+        <h2>18</h2>
+        <p>Subjects</p>
+      </div>
+
+      <div class="stat">
+        <h2>92%</h2>
+        <p>Overall Attendance</p>
+      </div>
+
+    </div>
+
+    <!-- STUDENT MANAGEMENT -->
+    <div class="card">
+      <h3>Student Management</h3>
+
+      <table class="table">
+        <tr>
+          <th>Roll No</th>
+          <th>Name</th>
+          <th>Department</th>
+          <th>Action</th>
+        </tr>
+
+        <tr>
+          <td>101</td>
+          <td>Rahul Kumar</td>
+          <td>CSE</td>
+          <td>
+            <button class="btn">Edit</button>
+            <button class="btn">Delete</button>
+          </td>
+        </tr>
+
+      </table>
+
+    </div>
+
+    <!-- FACULTY MANAGEMENT -->
+    <div class="card">
+      <h3>Faculty Management</h3>
+
+      <table class="table">
+        <tr>
+          <th>ID</th>
+          <th>Name</th>
+          <th>Subject</th>
+          <th>Action</th>
+        </tr>
+
+        <tr>
+          <td>F12</td>
+          <td>Prof. Sharma</td>
+          <td>DBMS</td>
+          <td>
+            <button class="btn">Edit</button>
+            <button class="btn">Delete</button>
+          </td>
+        </tr>
+
+      </table>
+
+    </div>
+
+  </div>
+</div>
+
+<script src="Admin.js">
+</script>
+
+</body>
+</html>
