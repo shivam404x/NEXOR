@@ -6,7 +6,7 @@
 #     if cv2.waitKey(10) == ord("a"):
 #      break
 # video_cp.release()
-
+# Only for camera open
 # face authicantation
 import cv2
 
@@ -32,4 +32,5 @@ while True:
     cv2.imshow("video_live", video_data)
     if cv2.waitKey(10) == ord("a"):
         break
+
 video_cp.release()
