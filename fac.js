@@ -5,6 +5,7 @@
 let timetable=[
   {period:"1st Period",time:"9:00‑10:00",course:"B‑Tech CSE",section:"C",subject:"DBMS"},
   {period:"2nd Period",time:"10:00‑11:00",course:"B‑Tech CSE",section:"E",subject:"Operating System"},
+  {period:"3rd Period",time:"11:00‑12:00",course:"BCA",section:"E",subject:"Computer Networks"},
   {period:"3rd Period",time:"11:00‑12:00",course:"BCA",section:"E",subject:"Computer Networks"}
 ];
 
@@ -134,3 +135,4 @@ function logout(){
   // alert("Logged out successfully");
   window.location.href="index.html";
 }
+
