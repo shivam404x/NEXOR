@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+}
+
+.container {
+    width: 400px;
+    background: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, .2);
+    animation: fadeIn 1s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px)
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0)
+    }
+}
+
+.title {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px
+}
+
+.role-select {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px
+}
+
+.role-select button {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    background: #e0e0e0;
+    cursor: pointer;
+    font-weight: bold;
+    transition: .3s
+}
+
+.role-select button.active {
+    background: #667eea;
+    color: #fff
+}
+
+.role-badge {
+    text-align: center;
+    margin-bottom: 15px;
+    font-weight: bold;
+    color: #667eea
+}
+
+.input-group {
+    margin-bottom: 15px
+}
+
+.input-group label {
+    font-size: 14px;
+    color: #555
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    outline: none
+}
+
+.login-btn {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background: #667eea;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer
+}
+
+.login-btn:hover {
+    background: #5563d6
+}
+
+.extra {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 13px
+}
+
+.extra a {
+    color: #667eea;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer
+}
+
+.hidden {
+    display: none
+}
+
+.otp-box {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin: 15px 0
+}
+
+.otp-box input {
+    width: 45px;
+    height: 45px;
+    text-align: center;
+    font-size: 18px;
+    border: 1px solid #ccc;
+    border-radius: 8px
+}
